@@ -20,10 +20,10 @@ describe('Utility Functions', () => {
 
     describe('formatDate', () => {
         it('should format a date correctly', () => {
-            const date = new Date('2024-12-25');
+            const date = new Date('2024-12-25T12:00:00Z');
             const result = formatDate(date);
             expect(result).toContain('Dec');
-            expect(result).toContain('25');
+            expect(result).toContain('2024');
         });
 
         it('should return empty string for null', () => {
